@@ -4,7 +4,7 @@
 # №2
 ![Image](https://github.com/user-attachments/assets/d57d032b-05cc-4233-b70b-7b663ed7b2d5)
 # №3
-
+![Image](https://github.com/user-attachments/assets/421dc218-358f-4777-b6d1-dfd90ebbe956)
 # №4
 
 # №6
