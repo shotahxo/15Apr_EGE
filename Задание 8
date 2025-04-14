@@ -1,0 +1,13 @@
+from itertools import *
+
+k=0
+a=[]
+p=permutations('МАРИНА')
+for x in p:
+    x=''.join(x)
+    if x not in a:
+        a.append(x)
+        if x[0] not in 'АИ':
+            k+=1
+print(k)
+# Ответ: 180
