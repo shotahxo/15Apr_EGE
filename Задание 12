@@ -1,0 +1,19 @@
+mx=-10**20
+mn=10**20
+for n in range(138,10000):
+    s='1'*n
+    while '111' in s:
+        s=s.replace('111','2',1)
+        s=s.replace('2222','1',1)
+    mx=max(mx,s.count('1'))
+
+for n in range(138,10000):
+    s='1'*n
+    while '111' in s:
+        s=s.replace('111','2',1)
+        s=s.replace('2222','1',1)
+    if s.count('1')==mx:
+        print(n)
+        break
+        
+# Ответ: 140
