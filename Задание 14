@@ -1,0 +1,13 @@
+def f(n):
+    s=''
+    while n>0:
+        ost=n%4
+        s=str(ost)+s
+        n=n//4
+    return s
+
+a=4**503+3*4**244-2*4**444-95
+a=f(a)
+k=a.count('3')
+print(k)
+# Ответ: 298
