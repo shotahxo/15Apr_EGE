@@ -1,0 +1,28 @@
+def sm(n):
+    s=0
+    a=str(n)
+    for i in range(len(a)):
+        s+=int(a[i])
+    return s
+
+
+
+sp=[]
+for n in range(1686,13277):
+    a=str(n)
+    f=1
+    for i in range(len(a)):
+        if int(a[i])%2==1:
+            pass
+        else:
+            f=0
+            break
+    if f==1:
+        sp.append(n)
+
+summ=0
+for i in range(len(sp)):
+    summ+=sm(sp[i])
+print(summ)
+
+# Ответ: 13950
