@@ -1,0 +1,11 @@
+from math import *
+l=261
+n=252500
+I=31*1024*1024
+
+Iodn=ceil(I/n)
+i=ceil(Iodn*8/l)
+N=2**i-2**(i-1)+1
+print(N)
+
+# Ответ: 9
