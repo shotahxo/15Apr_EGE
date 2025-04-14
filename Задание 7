@@ -1,0 +1,18 @@
+from math import *
+k=640*480
+i=16
+v=24
+
+n=2
+g=10
+c=40*1000
+t=5*60
+
+Ik=k*i*v
+Iz=g*c*n
+
+I=(Ik+Iz)*t
+I=ceil(I/8/1024/1024)
+print(I)
+
+# Ответ: 4248
