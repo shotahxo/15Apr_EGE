@@ -1,0 +1,21 @@
+s=open('17.txt').readlines()
+for i in range(len(s)):
+    s[i]=int(s[i])
+
+mx=-10**20
+for i in range(len(s)):
+    if s[i]%211==0:
+        mx=max(mx,s[i])
+
+k=0
+mn=10**20
+for i in range(len(s)-1):
+    if s[i]>mx or s[i+1]>mx:
+        if '1' in str(s[i]) or '1' in str(s[i+1]):
+            k+=1
+            sm=s[i]+s[i+1]
+            mn=min(mn,sm)
+
+print(k,mn)
+
+# Ответ: 67 11071
