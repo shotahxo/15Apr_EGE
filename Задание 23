@@ -1,0 +1,14 @@
+s=set()
+def f(a,p):
+   if p<5:
+       f(a+2,p+1)
+       f(a+3,p+1)
+       f(a*2,p+1)
+   if p==5:
+       global s
+       s.add(a)
+	   
+f(10,0)
+print(len(s))
+
+# Ответ: 83
